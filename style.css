@@ -1,0 +1,17 @@
+main {
+  background-color: aqua;
+  margin-top: 10%;
+}
+body {
+  background-color: blueviolet;
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
