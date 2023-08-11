@@ -55,3 +55,6 @@ if (fruits_v2[0] == "apple") {
 } else {
   console.log("Pierwszy element tablicy to nie apple");
 }
+Header.addEventListener("click", () => {
+  alert("NIE KLIKAJ TEGOO");
+});
