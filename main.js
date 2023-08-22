@@ -58,3 +58,46 @@ if (fruits_v2[0] == "apple") {
 Header.addEventListener("click", () => {
   alert("NIE KLIKAJ TEGOO");
 });
+
+//zadania z petli
+
+let numbersSum = 0;
+
+for (let i = 0; i <= 100; i++) {
+  if (i % 2 == 0) {
+    numbersSum += i;
+    // console.log(`Indeks ${i} a suma wynosi ${numbersSum}`);
+  }
+}
+console.log(
+  `Suma wszystkich liczb parzystych od 1 do 100 wynosi ${numbersSum}`
+);
+
+for (let j = 0; j <= 6; j++) {
+  console.log("*".repeat(j));
+}
+
+const h = 5;
+
+for (let i = 1; i <= h; i++) {
+  let stars = "";
+
+  for (let j = 1; j <= i; j++) {
+    stars += "*";
+  }
+
+  console.log(stars);
+}
+
+let k = 0;
+let sumNumbers = 0;
+while (k <= 50) {
+  if (k % 3 == 0 && k != 0) {
+    sumNumbers += 1;
+    console.log(`indeks wybosi ${k} a ilosć ${sumNumbers}`);
+  }
+  k++;
+}
+console.log(
+  `Ilość liczb podzielnych przez 3 dla zbioru od 0 do 50 wynosi ${sumNumbers}`
+);
