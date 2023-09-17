@@ -101,3 +101,50 @@ while (k <= 50) {
 console.log(
   `Ilość liczb podzielnych przez 3 dla zbioru od 0 do 50 wynosi ${sumNumbers}`
 );
+//zadania z funkcji
+
+function calculateAverage(...numbers) {
+  let numbersSum = 0;
+  // for (let i = 0; i < numbers.length; i++) {
+  // numbersSum += numbers[i];
+  // }
+  numbers.forEach((number) => {
+    numbersSum += number;
+  });
+  return numbersSum / numbers.length;
+}
+
+function filterEvenNumbers(...numbers) {
+  let evenNumbers = [];
+  // for (let i=0; i<numbers.length; i++)
+  // {
+  // if(numbers[i]%2===0)
+  // {
+  // evenNumbers.push(numbers[i]);
+  // }
+  //
+  // }
+  numbers.forEach((number) => {
+    if (number % 2 === 0) {
+      evenNumbers.push(number);
+    }
+  });
+  console.table(evenNumbers);
+}
+
+function countOccurences(element, ...array) {
+  let elementOccurence = 0;
+  // for (let i=0; i<array.length; i++)
+  // {
+  // if (array[i]===element)
+  // {
+  // elementOccurence+=1;
+  // }
+  // }
+  array.forEach((arrayElement) => {
+    if (arrayElement === element) {
+      elementOccurence += 1;
+    }
+  });
+  return elementOccurence;
+}
